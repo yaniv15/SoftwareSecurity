@@ -4,7 +4,10 @@
 
 ###Project Part #2 – Log Auditing
 
-===============================================================
+
+------------
+
+
 
 ###Team Members :
 
@@ -12,7 +15,10 @@
 - Jyoti 1224121327 jnolas15@asu.edu
 - Janardhan Manthena 1224389556 mjanardh@asu.edu
 
-===============================================================
+
+------------
+
+
 
 ###Problem Statement:
 The sequential records of data that are important and/or necessary to upholding the system's 
