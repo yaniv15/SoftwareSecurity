@@ -176,39 +176,39 @@ def parse(name):
 
 
 
-#can be used later
-    # for i in object_to_subject:
-    #     print()
-    #     print("for " + i.name)
-    #     print("\t"+" by ", end="\t")
-    #     for j in object_to_subject[i]:
-    #         print(j.name, end="\t")
+
+     for i in object_to_subject:
+         print()
+         print("for " + i.name)
+         print("\t"+" by ", end="\t")
+         for j in object_to_subject[i]:
+             print(j.name, end="\t")
 
 
-# def parse_for_cwd():
-#     cwd_list = list(cwd_to_subject[global_cwd])
-#     processed_cwd_list = []
-#     for i in range(0, len(cwd_list)):
-#         if "sh(" not in cwd_list[i].name:
-#             processed_cwd_list.append(cwd_list[i])
-#
-#     cwd_list = processed_cwd_list
-#     cwd_list.sort(key=lambda x: Decimal(x.start))
-#
-#     for i in cwd_list:
-#         print(i.name, end = " | ")
-#     for i in range(0, len(cwd_list) - 1):
-#         if cwd_list[i] in object_to_subject:
-#             object_to_subject[cwd_list[i]].append(cwd_list[i+1])
-#         else:
-#             object_to_subject[i] = [cwd_list[i+1]]
+ def parse_for_cwd():
+     cwd_list = list(cwd_to_subject[global_cwd])
+     processed_cwd_list = []
+     for i in range(0, len(cwd_list)):
+         if "sh(" not in cwd_list[i].name:
+             processed_cwd_list.append(cwd_list[i])
 
-    # for i in object_to_subject:
-    #     print()
-    #     print("for " + i.name)
-    #     print("\t"+" by ", end="\t")
-    #     for j in object_to_subject[i]:
-    #         print(j.name, end="\t")
+     cwd_list = processed_cwd_list
+     cwd_list.sort(key=lambda x: Decimal(x.start))
+
+     for i in cwd_list:
+         print(i.name, end = " | ")
+     for i in range(0, len(cwd_list) - 1):
+         if cwd_list[i] in object_to_subject:
+             object_to_subject[cwd_list[i]].append(cwd_list[i+1])
+         else:
+             object_to_subject[i] = [cwd_list[i+1]]
+
+     for i in object_to_subject:
+         print()
+         print("for " + i.name)
+         print("\t"+" by ", end="\t")
+         for j in object_to_subject[i]:
+             print(j.name, end="\t")
 
 
 
